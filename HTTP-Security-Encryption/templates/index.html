@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+</head>
+<body>
+
+
+<form action="/send_message" method="POST">
+  <p>Send a message:</p>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea>
+  <br>
+  <input type="submit" class="btn btn-primary" value="Send">
+</form>
+
+<button class="btn btn-primary" onclick="document.getElementById('image').style.display = 'block'">OSI Layer</button>
+<img id="image" src="{{ url_for('static', filename='images/osi.svg') }}" alt="Example Image" style="display: none;">
+
+</body>
+
+</html>
+
+
+
