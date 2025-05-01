@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 
+
 app = Flask(__name__)
 
 IP_ADDRESS = '127.0.0.1'
